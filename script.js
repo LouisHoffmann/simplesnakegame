@@ -102,7 +102,7 @@ function startGame() {
 }
 
 function pauseGame(e) {
-  if ((e.keyCode == 27, start.style.display === 'none')) {
+  if (e.keyCode == 27 && start.style.display === 'none') {
     clearInterval(myInterval)
     isPaused = true
     start.style.opacity = 0.7
