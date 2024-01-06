@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snake</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body onload="setHighscore(), showHighscore(), startScoreboard()">
+    <div id="container">
+      <canvas id="canvas" width="480" height="480"></canvas>
+      <div id="start">
+        <a id="newGame" href="#" onclick="startGame()">New Game</a>
+        <a id="continue" href="#" onclick="continueGame()">Continue</a>
+      </div>
+      <div id="gameover-screen">
+        <h1>Game over</h1>
+        <p id="presskey">press any key to restart</p>
+      </div>
+    </div>
+
+    <div id="score-board">
+      <p id="score">Score: 1</p>
+      <p id="field-size">playing field size: 39</p>
+      <p id="highscore">Highscore:</p>
+    </div>
+
+    <img id="apple" src="apple_00.png" alt="" />
+
+    <script src="script.js"></script>
+  </body>
+</html>

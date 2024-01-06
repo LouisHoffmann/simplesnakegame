@@ -1,0 +1,103 @@
+#score-board {
+  text-align: center;
+  width: 480px;
+  position: absolute;
+}
+
+#container {
+  height: 480px;
+  position: relative;
+}
+
+#container canvas,
+#gameover-screen,
+#start {
+  position: absolute;
+}
+
+canvas {
+  display: none;
+  box-shadow: black 20px 10px 50px;
+}
+
+#gameover-screen,
+#start {
+  display: none;
+  color: white;
+  background-color: rgb(58, 58, 58);
+  height: 480px;
+  width: 480px;
+  position: relative;
+}
+
+#presskey {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+h1 {
+  margin: 0;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#start {
+  display: block;
+  text-align: center;
+  box-shadow: black 20px 10px 50px;
+}
+
+#newGame {
+  border: 3px solid white;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 15px;
+  cursor: pointer;
+  display: block;
+  width: 200px;
+  text-align: center;
+  font-size: 2em;
+  display: inline-block;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#continue {
+  border: 3px solid white;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 15px;
+  cursor: pointer;
+  display: block;
+  width: 200px;
+  text-align: center;
+  font-size: 2em;
+  display: inline-block;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  visibility: hidden;
+}
+
+#start a:hover {
+  background-color: white;
+  color: black;
+}
+
+.visible {
+  visibility: visible !important;
+}
+
+#apple {
+  visibility: hidden;
+}
