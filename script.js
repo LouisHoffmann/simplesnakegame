@@ -192,7 +192,7 @@ function gameLoop() {
   testGameOver()
   goThroughWall()
   if (foodCollected) {
-    snake = [{ x: snake[0].x, y: snake[0].y }, ...snake]
+    snake[snake.length] = { x: snake[0].x, y: snake[0].y }
     scoreBoard()
     foodCollected = false
   }
